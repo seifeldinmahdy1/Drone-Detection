@@ -7,4 +7,4 @@
 
 # YOLOv8
 
-(https://github.com/ultralytics/ultralytics)
+https://github.com/ultralytics/ultralytics
