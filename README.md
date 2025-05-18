@@ -1,10 +1,27 @@
-# Drone-Detection
+# Drone Detection with Faster R-CNN
 
-# Datasets to be used for object detection using YOLO11
+## Features
 
-1. [YOLO Drone Detection Dataset](https://www.kaggle.com/datasets/muki2003/yolo-drone-detection-dataset)
-2. [Drone Object Detection](https://www.kaggle.com/datasets/sshikamaru/drone-yolo-detection)
+- Faster R-CNN model with MobileNetV3-Large backbone for efficient drone detection
+- Data augmentation pipeline using Albumentations
+- Custom dataset class for COCO format annotations
+- Training and evaluation scripts
+- Inference on new images
+- Model saving and loading functionality
 
-# YOLO11
+## Model
 
-https://github.com/ultralytics/ultralytics
+The implementation uses a Faster R-CNN model with a MobileNetV3-Large backbone and Feature Pyramid Network (FPN). This architecture provides a good balance between accuracy and inference speed.
+
+Key components:
+- MobileNetV3-Large backbone pre-trained on ImageNet
+- Feature Pyramid Network for multi-scale feature detection
+- Region Proposal Network (RPN)
+- ROI pooling and classification heads
+
+## Results
+
+The model achieves:
+- High IoU scores for accurate localization
+- Good detection performance across various lighting conditions and backgrounds
+- Real-time inference capability
